@@ -1,0 +1,48 @@
+#skills{
+	height: 600px;
+	width: 100%;
+	background-color: whitesmoke;
+	border: none;
+	padding: 20px;
+	
+	
+} 
+
+.tbl{
+	margin-left:5%;
+
+}
+
+.tbl tr td {
+	box-shadow: 0px 0px 5px royalblue;
+	padding: 40px ;
+	border-radius: 20px;	
+	width:50%;
+	transition-duration: 1.5s;
+	
+}
+
+.skills-subheading
+{
+	color: orangered;
+	font-family: sans-serif;
+	font-size: 25px;
+	font-weight: bolder;
+	font-variant: small-caps;
+}
+
+.detailedSkills
+{   
+	font-size: 10px;
+	font-weight: bolder;
+	line-height: 40px;
+	word-spacing: 3px;
+	margin-top: 20px;
+	color: rgb(109, 101, 101);
+}
+
+.tbl tr td:hover{
+	transform: scale(1.05);
+	border: 1px solid grey;
+	box-shadow: 10px 15px 10px grey;
+}

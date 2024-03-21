@@ -11,6 +11,7 @@
 
     <!-- external css below -->
     <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
 
 	<title>Umesh Portfolio</title>
 </head>
@@ -18,8 +19,8 @@
 
 	<div class="navigation-bar">
 		
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Umesh</a>
+		<nav class="navbar navbar-expand-lg navbar-light ">
+  <a class="navbar-brand" href="#"><span  class="brand tracking-in-expand">Umesh</span></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -27,28 +28,175 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#home"><span class="navmenu">HOME</span> <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="#about"><span class="navmenu">ABOUT</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Skills</a>
+        <a class="nav-link" href="#skills"><span class="navmenu">SKILLS</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Project</a>
+        <a class="nav-link" href="#projects"><span class="navmenu">PORJECT</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="#contact"><span class="navmenu">CONTACT</span></a>
       </li>
-      
-     
     </ul>
-   
   </div>
 </nav>
-		
 	</div>
 
+  <!-- nav ends here -->
+ <div class="main-container">
+  <section  id="home" class="portfolio-sections">
+    <div id="home-info">
+      <span class="info">Hi</span><br>
+      <span class="info">My name is</span><br>
+      <span class="brand myname">Umesh</span><br>
+      <span class="info">I am <span class="designation text-focus-in"><u>Full Stack Developer</u></span></span><br>
+      <button href="demo.pdf" class="rsmbtn">RESUME</button>
+    </div>
+   
+  </section>
+  <section  id="about" class="portfolio-sections about-section">
+   <div class="aboutmain">
+    <div class="myimage">
+         <img class="minion "src="data:image/png;base64,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" width="300px" height="300px" alt="">
+    </div>
+    <div class="carrerobj">
+      <h1 class="heading">ABOUT</h1>
+      <p class="carrerinfo">Dedicated full-stack developer passionate about creating robust, user-friendly web applications.
+         Experienced in both front-end and back-end technologies, focusing on delivering scalable solutions.
+         Committed to staying updated with the latest industry trends and continuously enhancing skills to drive innovation.</p>
+    </div>
+   </div>
+  </section>
+
+  <section  id="skills" class="portfolio-sections skill-section">
+    <h1 class="heading">SKILLS</h1>
+
+    <table  class="tbl"  height="450px" width="90%" cellspacing="20px" >
+      <tr align ="center" valign="top" >
+
+        <div class="borderskills">
+        <td width="50%"  >
+          <h2 class="skills-subheading">Languages</h2>
+          <p class="detailedSkills">
+            Core Java,C ,C++, Python, C#, JavaScript,HTML,CSS,SQL.
+          </p>
+        </td>
+      </div>
+
+      <div class="borderskills">
+        <td width="50%" >
+          <h2 class="skills-subheading">Api's & Frameworks</h2>
+        <p class="detailedSkills"> Collection,Streams API,Rest API, Spring, Hibernates ,Servlet,JDBC,Springboot ,Spring MVC , JSP , React JS.</p>
+      </td>
+      </div> 
+      </tr>
+
+      <tr align="center" valign="top" >
+        <div class="borderskills">
+          <td width="50%"  ><h2 class="skills-subheading">Tools</h2>
+          <p class=" detailedSkills"> 
+            VS code,Eclipse IDE, Git, Github, Netbeans,  Postman, Mysql, Maven, Tomcat, MongoDB.
+          </p>
+        </td>
+        </div>
+
+         <div class="borderskills">
+          <td width="50%"  ><h2 class="skills-subheading" >Operating Systems</h2>
+          <p class="detailedSkills">
+            Windows, Android, ios, Linux, Ubuntu, Solaris.
+          </p>
+        </td>
+         </div> 
+      </tr>
+    </table>
+  </section>
+
+  <section  id="projects" class="portfolio-sections">
+    <h1 class="heading">PROJECTS</h1>
+    <div class="project-card-container">
+
+      <div class="card-deck">
+        <div class="card">
+          <img src="" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">CALCULATOR</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          
+        </div>
+        <div class="card">
+          <img src="https://img.freepik.com/premium-psd/3d-icon-transparant-background_352850-7.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">WEATHER FORECAST</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+          
+        </div>
+        <div class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Spotify_App_Logo.svg/800px-Spotify_App_Logo.svg.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">SPOTIFY</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section  id="contact" class="portfolio-sections">
+    <h1 class="heading">CONTACT</h1>
+    <div class="main-container1">
+      <div class="contact-child">
+        <ul class="contact-info" type="none">
+          <li>&#x1F449; umesh123@gmail.com</li>
+          <li>&#x1F449;9568749652</li>
+          <li>&#x1F449;<a href="https://www.linkedin.com/in/umesh-bhakare-60ba99201?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ">Linkedin</a></li>
+          <li>&#x1F449;<a href="https://umesh308.github.io/portfolio_umesh/">GitHub</a></li>
+          <li>&#x1F449;Nagpur Maharashatra</li>
+        </ul>
+
+      </div>
+      <div class="contact-child contact-form">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Comments</label>
+            <textarea type="password" class="form-control" id="exampleInputPassword1"></textarea>
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+
+  </section>
+  <section id="footer">
+    <h1 id="footerinfo">MADE BY ©UMESH 2024</h1>
+  </section>
+
+
+
+<!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 2000
+
+  });
+</script> -->
 </body>
 </html>
+
+

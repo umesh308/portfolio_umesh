@@ -1,4 +1,361 @@
-body
+*{
+	padding: 0;
+	margin:0;
+}
+
+.portfolio-sections{
+	height:500px;
+	width:100%;
+	/* border:2px solid black; */
+	text-align:left;
+	background-attachment: white;
+	background-color: whitesmoke;
+}
+
+.navigation-bar{
+	position:fixed;
+	width:100%;
+	background-color: transparent;
+	backdrop-filter: blur(10px);
+	z-index: 1;
+}
+
+.portfolio-sections h1{
+  margin-top: 40px;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+.main-container{
+	position: relative;
+	top: 70px;
+}
+.brand{
+	font-size: 30px;
+	font-family: arial black;
+	font-variant: small-caps;
+	color: orangered;
+}
+
+.navmenu{
+	color: black;
+	font-size: 20px;
+	font-family: sans-serif;
+	font-weight: bolder;
+	padding-left: 15px;
+}
+
+.navmenu:hover{
+	text-decoration: underline 2px solid black;
+	text-underline-offset: 6px;
+}
+
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+
+ @-webkit-keyframes tracking-in-expand {
+	0% {
+	  letter-spacing: -0.5em;
+	  opacity: 0;
+	}
+	40% {
+	  opacity: 0.6;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+  @keyframes tracking-in-expand {
+	0% {
+	  letter-spacing: -0.5em;
+	  opacity: 0;
+	}
+	40% {
+	  opacity: 0.6;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+
+ 
+
+  .text-focus-in {
+	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s both;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s both;
+}
+
+
+ @-webkit-keyframes text-focus-in {
+	0% {
+	  -webkit-filter: blur(12px);
+			  filter: blur(12px);
+	  opacity: 0;
+	}
+	100% {
+	  -webkit-filter: blur(0px);
+			  filter: blur(0px);
+	  opacity: 1;
+	}
+  }
+
+
+#home{
+	height: 400px;
+	background-image: url(https://i0.wp.com/karanlehar.com/wp-content/uploads/2023/10/360_F_601171862_l7yZ0wujj8o2SowiKTUsfLEEx8KunYNd-removebg-preview.png?fit=540%2C360&ssl=1);
+    background-repeat: no-repeat;
+	background-size: 40%;
+	background-position: 90% 90%;
+	border: none;
+	
+}
+
+
+#home-info{
+	position: absolute;
+	top:20px;
+	width: 400px;
+	height: 250px;
+	font-size: 25px;
+	margin-top: 50px;
+	margin-left: 50px;
+}
+
+.info{
+	font-weight: bolder;
+	color: lightslategray;
+}
+.designation{
+	color: royalblue;
+	font-size: 25px;
+	font-weight: bolder;
+}
+.designation:hover{
+	background-color: rgb(197, 233, 254);
+  color: royalblue;
+  transform: scale(3.1);
+}
+.myname{
+	font-size: 35px;
+}
+
+
+.rsmbtn{
+	height: 40px;
+	width: 100px;
+	border: none;
+	margin-top: 20px;
+	border-radius: 10px;
+	font-size: 15px;
+	font-weight: bolder;
+	background-color: royalblue;
+	color: white;
+	transition-duration: 1s;
+}
+.rsmbtn:hover{
+  background-color: white;
+  color: royalblue;
+  border: 3px solid royalblue;
+
+  transform: scale(1.1);
+}
+
+
+.about-section{
+	height: 500px;
+	width:100%;
+	background-color: whitesmoke;
+	border: none;
+	
+
+}
+
+.aboutmain{
+	height: 500px;
+	width: 100%;
+	display: flex ;
+	font-size:25px;
+	font-family: sans-serif;
+	font-weight: bolder;
+	
+}
+
+.aboutmain div{
+	height: 500px;
+	width:50%;
+}
+
+.minion{
+	margin-top: 100px;
+	margin-left: 250px;
+	animation-duration: 4s;
+	animation-name: zoom;
+	animation-iteration-count: 5;
+
+
+}
+.myimage{
+   position: 90% 50%;
+   size: 200px !important;
+	
+}
+
+@keyframes zoom {
+	100%{
+		transform: scale(1.2);
+		border-radius: 60px;
+	}
+}
+
+.heading{
+	font-family: Arial black;
+	text-align: center;
+	margin:10px 0px;
+	font-size:40px;
+	color: royalblue;
+}
+
+.carrerobj{
+	padding: 40px;
+	
+	
+}
+
+.carrerinfo{
+	text-align: justify;
+	line-height: 40px;
+	text-indent: 100px;
+	word-spacing: 7px;
+	
+}
+
+#skills{
+	height: 600px;
+	width: 100%;
+	background-color: whitesmoke;
+	
+	padding: 20px;
+	
+	
+} 
+
+ .tbl{
+	margin-left:5%;
+
+}
+
+.tbl tr td {
+	box-shadow: 0px 0px 5px royalblue;
+	padding: 40px ;
+	border-radius: 20px;	
+	width:50%;
+	transition-duration: 1.5s;
+	
+}
+
+.tbl tr td:hover{
+	transform: scale(1.05);
+	border: 1px solid grey;
+	box-shadow: 10px 15px 10px grey;
+}
+
+
+.skills-subheading
 {
-	background-color: red;
+	color: orangered;
+	font-family: sans-serif;
+	font-size: 25px;
+	font-weight: bolder;
+	font-variant: small-caps;
+} 
+
+.detailedSkills
+{   
+	font-size: 10px;
+	font-weight: bolder;
+	line-height: 40px;
+	word-spacing: 3px;
+	margin-top: 20px;
+	color: rgb(109, 101, 101);
+}
+
+
+#projects{
+	height: 800px;
+	width: 100%;
+	padding: 20px;
+	border: none;
+}
+.heading{
+	color: royalblue;
+	font-family: Arial black;
+	text-align: center;
+	margin-top: 20px;
+	font-size: 35;
+}
+.project-card-container{
+	padding: 20px;
+	margin-top: 20px;
+}
+.card-title{
+	color: orangered;
+	text-align: center;
+	font-family: sans-serif;
+	font-weight: bolder;
+}
+.card-title:hover{
+	text-decoration: underline 2px solid orangered;
+	text-underline-offset: 5px;
+	cursor: pointer;
+}
+#contact{
+	height: 500px;
+	width: 100%;
+	background-color: white;
+	padding: 20px;
+}
+.main-container1{
+	height: 400px;
+	width: 80%;
+	display: flex;
+	margin-left: 10%;
+}
+.contact-child{
+	height: 400px;
+	width: 50%;
+}
+
+.contact-info{
+	font-size: 18px;
+	font-family: sans-serif;
+	font-weight: bolder;
+	margin-top: 70px;
+}
+.contact-info li{
+	margin-top: 20px;
+}
+.contact-form{
+	padding: 15px;
+	padding-left: 70px;
+	margin-top: 50px;
+}
+#footer{
+	height: 50px;
+	width: 100%;
+	background-color: royalblue;
+	text-align:center;
+	border: none;
+
+}
+
+#footerinfo{
+	font-size: 20px;
+	line-height: 50px;
+	color: white;
+	
 }
